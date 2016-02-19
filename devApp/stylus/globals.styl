@@ -1,0 +1,31 @@
+global-reset()
+
+$backgroundSiteColor = #e8e8e8;
+$backgroundHeaderColor = white;
+
+body
+  background-color $backgroundSiteColor;
+  font-family Open Sans
+  font-size 14px
+  font-weight 400
+  
+.global-wrap
+  width 960px
+  margin 0 auto
+  // border 1px dashed goldenrod
+    
+  +below(960px)
+    width 90%
+    // padding 0 10px
+
+.orange
+  color #f47720
+  
+.gray
+  color #c7c7c7
+  
+.hover-green:hover
+  color #5af158
+  
+.hover-red:hover
+  color #e51c23

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- 2016-02-18 11:00 - 2016-02-18 17:00 -->
+  <!-- Configuração do ambiente de dev, header e footer -->
+
+  <!-- 2016-02-18 22:00 - 2016-02-19 01:00 -->
+  <!-- Questions Feed, Question e Conteúdo Patrocinado -->
+
+  <!-- 2016-02-19 11:00 -->
+  <title>Passei Direto</title>
+
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css">
+  <!-- Poderia ter colocado a pasta vendor dentro de devApp, mas como fiz pulamos uma etapa no gulp -->
+  <link rel="stylesheet" href="assets/css/passeidireto.css">
+</head>
+<body>
+  <header class="header">
+    
+    <div class="header-topbar">
+      <div class="global-wrap">
+        <a href="#" class="logo">
+          <img src="assets/img/passei-direto-premium.png" alt="Passei Direto Premium" class="logo">
+          <!-- faria essa logo em SVG para ter mais controle sobre o objeto, mas não estou com illustrator para converter -->
+        </a>
+
+        <div class="user">
+          <div class="avatar">
+            <div class="circle">
+              <img class="photo" src="assets/img/avatar.jpg" alt="">
+            </div>
+            <img class="badge" src="assets/img/ic_avatar_badge.png" alt="">
+          </div>
+          <div class="info">
+            <p class="name">Cassio Mansini</p>
+            <p class="school">Unesa - RJ</p>            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-menu">
+      <div class="global-wrap">
+          <!-- Algo que eu perguntaria ao Designer, se existiria a possibilidade de 
+               tratar a interação com cor ao invez de font-weight. Da forma que estamos
+               trabalhando o espaçamento, para fazer essa interação com font-width 
+               cada elemento do menu teria que ter um width específico. Temos um problema de respiro aqui. -->
+          <ul class="header-menu--list">
+            <li class="header-menu--item">
+              <a href="#">
+                <img class="home" src="assets/img/ic_home_gray.png" alt="Home">
+                Home
+              </a>
+            </li>
+            <li class="header-menu--item">
+              <a href="#">              
+                <img class="material" src="assets/img/ic_material_gray.png" alt="Materiais de Estudo">
+                Materiais de Estudo
+              </a>
+              <div class="header-menu--subitem">
+                <h3>Materiais de Estudo</h3>
+                <ul>
+                  <li>Material 0001</li>
+                  <li>Material 0002</li>
+                  <li>Material 0003</li>
+                  <li>Material 0004</li>
+                  <li>Material 0005</li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-menu--item">
+              <a href="#">
+                <img class="disciplina" src="assets/img/ic_discipline_gray.png" alt="Disciplina">
+                Disciplina
+              </a>
+            </li>
+            <li class="header-menu--item">
+              <a href="#">
+                <img class="estudantes" src="assets/img/ic_school_gray.png" alt="Estudantes">
+                Estudantes
+              </a>
+              <div class="header-menu--subitem">
+                <h3>Estudantes</h3>
+                <ul>
+                  <li>Estudante 0001</li>
+                  <li>Estudante 0002</li>
+                  <li>Estudante 0003</li>
+                  <li>Estudante 0004</li>
+                  <li>Estudante 0005</li>
+                </ul>
+              </div>
+              <!-- coloquei mais um elemento de subitem em estudantes, pq normalmente as soluções em CSS puro podem bugar quando mais de um item do menu tem essa opção de dropdown -->
+            </li>
+          </ul>
+      </div>
+    </div>  
+  </header>
+
+  <section class="content">
+    <div class="global-wrap">
+      <section class="question-feed">
+        <div class="question">
+          <div class="question--discipline">
+            <a href="#" class="corner-arrow"><i class="fa fa-angle-down"></i></a>
+            <div class="type">
+              <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x orange"></i>
+                <i class="fa fa-at fa-lg fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <div class="tittle">
+              <h3>Estatística II</h3>
+              <p>PUC-Rio • há 2h</p>
+            </div>
+          </div>
+
+          <div class="question--content">
+            <div class="voting">
+              <a href="#" class="fa fa-thumbs-up gray hover-green"></a>
+              <p>1</p>
+              <a href="#" class="fa fa-thumbs-up fa-rotate-180 gray hover-red"></a>
+            </div>
+
+            <div class="query">
+              <div class="query-wrap">
+                <img class="query-type" src="assets/img/query-type-question.png" alt="Pergunta">
+                <div class="query-text">Qual o cenário globalizado que afeta positivamente a correta previsão das formas de ação, por conseguinte, o novo modelo estrutural aqui?</div>              
+              </div>
+              <div class="query-tags">
+                <a href="#" class="tag">#fisiologia</a>
+                <a href="#" class="tag">#EAD</a>
+              </div>
+
+              <div class="query-wrap">
+                <p class="query-info">56 responderam - 2 aprovaram</p>
+                <div class="author">
+                  <div class="avatar">
+                    <div class="circle">
+                      <img class="photo" src="assets/img/avatar.jpg" alt="">
+                    </div>
+                  </div>
+                  <p class="name">Fernando</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="question--interactions">
+            <a href="#"><i class="fa fa-share fa-flip-horizontal orange"></i>Responder</a>
+            <a href="#"><i class="fa fa-bars orange"></i>Adicionar à lista <i class="fa fa-angle-down"></i></a>
+            <a href="#"><i class="fa fa-share-alt orange"></i>Compartilhar</a>
+          </div>
+        </div>
+
+        <div class="question ad">
+          <div class="question--discipline">
+            <a href="#" class="corner-arrow"><i class="fa fa-angle-down"></i></a>
+            <img src="assets/img/question-ad.png" alt="Universidade Passei Direto">
+            <div class="tittle">
+              <h3>Universidade Passei Direto</h3>
+              <p>Conteúdo Patrocinado</p>
+            </div>
+          </div>
+          <div class="ad--content">
+            <img width="277" height="129" src="assets/img/american-graduate-day-facebook.png" alt="Fique por dentro de tudo o que acontece de bacana no mundo universitário.">
+            <div class="ad-wrap">
+              <div class="tittle">Fique por dentro de tudo o que acontece de bacana no mundo universitário</div>
+              <div class="brief">Sabemos que a vida de um universitário não é fácil. São tarefas e coisas para estudar, estágio e tantas outras coisas acontecendo ao mesmo tempo que...</div>
+              <div class="tags">
+                <a href="#" class="tag">#vidauniversitária</a>
+                <a href="#" class="tag">#sonhos</a>
+                <a href="#" class="tag">#passeidireto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sidebar">
+        <div class="ad-wrap">
+          <a href="#"><img src="assets/img/ad-bepremium.png" alt=""></a>
+          <!-- como no psd estava uma imagem chapada, e pela natureza do elemento, acredito que aqui vão entrar elementos simples como imagem ou swf -->
+        </div>
+
+        <div class="suggestions">
+          <h3>Sugestões de Disciplinas</h3>
+          <ul class="suggestions-list">
+            <li class="suggestion-item">
+              <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x orange"></i>
+                <i class="fa fa-at fa-lg fa-stack-1x fa-inverse"></i>
+              </span>
+              <div class="suggestion-info">
+                <p>Laboratório II</p>
+                <small>2.012 materiais | 120 seguidores</small>
+              </div>
+            </li>
+            <li class="suggestion-item">
+              <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x orange"></i>
+                <i class="fa fa-at fa-lg fa-stack-1x fa-inverse"></i>
+              </span>
+              <div class="suggestion-info">
+                <p>Laboratório II</p>
+                <small>2.012 materiais | 120 seguidores</small>
+              </div>
+            </li>
+            <li class="suggestion-item">
+              <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x orange"></i>
+                <i class="fa fa-at fa-lg fa-stack-1x fa-inverse"></i>
+              </span>
+              <div class="suggestion-info">
+                <p>Laboratório II</p>
+                <small>2.012 materiais | 120 seguidores</small>
+              </div>
+            </li>
+            <li class="suggestion-item">
+              <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x orange"></i>
+                <i class="fa fa-at fa-lg fa-stack-1x fa-inverse"></i>
+              </span>
+              <div class="suggestion-info">
+                <p>Laboratório II</p>
+                <small>2.012 materiais | 120 seguidores</small>
+              </div>
+            </li>
+          </ul>
+          <a href="#">Mais sugestões</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="aside">
+      <div class="groups">
+        <div class="header">Grupos de Estudo <i class="fa fa-plus orange"></i></div>
+        <ul>
+          <li>Lab 01</li>
+          <li>Lab 02</li>
+          <li>Lab 03</li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <div class="header">Contatos</div>
+        <ul>
+          <li>Carlos Ferreira</li>
+          <li>Felipe Ferreira</li>
+          <li>Carlos Ferreira</li>
+        </ul>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Buscar">
+        <i class="fa fa-search"></i>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="global-wrap">
+      <ul class="footer-menu--list">
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Na mídia</a></li>
+        <li><a href="#">Privacidade</a></li>
+        <li><a href="#">Termos de uso</a></li>
+        <li><a href="#">Carreiras</a></li>
+        <li><a href="#">PD Jobs</a></li>
+        <li class="logo"><img src="assets/img/passei-direto-footer-gray.png" alt=""></li>
+      </ul>
+
+      <div class="copyright">
+        © 2015 Passei Direto | <strong>Siga, curta, compartilhe, assista!</strong>
+        <ul class="footer-menu--sociallist">
+          <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+          <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+          <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+          <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+          <!-- aqui cai um caso de seguir 100% o layout OU permitir que a atualizacao do vendor interfira no layout dado pelo designer -->
+          <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="blackout">
+    <div class="modal-ad-content">
+      <a href="#" class="close-modal">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x gray"></i>
+          <i class="fa fa-close fa-lg fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+      <h2>Título Principal</h2>
+      <ul>
+        <li><a href="#">Aceitação dos termos de uso</a></li>
+        <li><a href="#">Aceitação dos termos de uso</a></li>
+        <li><a href="#">Definições dos termos</a></li>
+        <li><a href="#">Definições dos termos</a></li>
+        <li><a href="#">Condições da hospedagem</a></li>
+        <li><a href="#">Condições da hospedagem</a></li>
+        <li><a href="#">Obrigações do Passei Direto</a></li>
+        <li><a href="#">Obrigações do Passei Direto</a></li>
+        <li><a href="#">Prazo de vigência</a></li>
+        <li><a href="#">Prazo de vigência</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "passeidireto",
+  "version": "0.0.1",
+  "authors": [
+    "cassio mansini <cassiomansini@gmail.com>"
+  ],
+  "description": "teste do cassio mansini para a passei direto",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "build/assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.5.0"
+  },
+  "devDependencies": {
+    "font-awesome": "~4.5.0"
+  }
+}

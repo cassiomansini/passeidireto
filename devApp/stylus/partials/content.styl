@@ -1,0 +1,268 @@
+section.content
+  padding 10px 0
+  position relative
+  
+  .global-wrap
+    display flex
+    
+    +below(960px)
+      flex-direction column
+      align-items center
+  
+    // > *
+    //   border 1px dashed red
+
+  .question-feed
+    width 620px
+    margin-right 10px
+    
+    +below(960px)
+      margin 0
+    
+    +below(620px)
+      width 90%
+    
+    .question
+      width 100%
+      background-color white
+      border-radius 2px
+      box-shadow 0px 2px 1px 0px rgba(0,0,0,0.25)
+      margin-bottom 15px
+      
+      > *
+        padding 13px 20px
+        border-bottom 1px solid #d9d9d9
+        
+        &:last-child
+          border-bottom none
+          
+      .ad--content
+        display flex
+        padding 30px 20px
+        +below(620px)
+          flex-direction column
+          align-items center
+
+        img
+          margin-right 10px
+          width 100%
+          +below(620px)
+            margin-right 0
+            margin-bottom 10px
+          
+        .ad-wrap
+          display flex
+          flex-direction column
+          justify-content space-between
+          .tittle
+            font-weight 600
+            font-size 14px
+            line-height 1.5
+            color #404040
+            
+          .brief
+            color #b1b1b1
+            font-size 12px
+            line-height 1.5
+            
+          .tags
+            .tag
+              font-size 12px
+              color white
+              text-decoration none
+              display inline-block
+              padding 5px
+              border-radius 2px
+              background-color #edbf00
+        
+      .question--discipline
+        display flex
+        align-items center
+        position relative
+        
+        .corner-arrow
+          position absolute
+          top 5px
+          right 10px
+          font-size 18px
+          color #d1d1d1
+
+        .tittle
+          margin-left 10px
+          h3
+            font-size 15px
+            font-weight 600
+            margin-bottom 3px
+          p
+            font-size 12px
+            color #b1b1b1
+      
+      .question--content
+        display flex
+        
+        .voting
+          display flex
+          flex-direction column
+          align-items center
+          font-size 12px
+          margin 0 20px 0 7px
+          .fa-thumbs-up, .fa-thumbs-down
+            font-size 18px
+            text-decoration none
+            
+        .query
+          .query-wrap
+            display flex
+            align-items center
+            justify-content space-between
+
+          .query-type
+            margin-right 10px
+            
+          .query-text
+            flex-grow 1
+          
+          .query-tags
+            margin 15px 0
+            .tag
+              padding 6px
+              border-radius 3px
+              background-color #8c56a9
+              color white
+              text-decoration none
+              display inline-block
+              font-size 11px
+              
+          .query-info
+            font-weight 600
+            font-size 12px
+            color #999999
+    
+          .author
+            position relative
+            
+            display flex
+            justify-content space-between
+            align-items center
+            
+            > *
+              margin 0 5px
+            
+            .avatar
+              size(25px)
+              
+              .circle
+                size (100%)
+                overflow hidden
+                border-radius 50px
+                position relative
+              
+              .photo
+                max-width 100%
+                max-height 100%
+            
+              .name
+                font-size 11px
+                color #404040
+
+      .question--interactions
+        display flex
+        justify-content space-around
+        
+        a
+          text-decoration none
+          color #666666
+          font-weight 600
+          font-size 13px
+          i
+            margin-right 5px
+
+  .sidebar
+    flex-grow 1
+    display flex
+    flex-direction column
+    align-items stretch
+    // border 1px dashed red
+    
+    .ad-wrap
+      margin-bottom 15px
+      a
+        border none
+        margin none
+        text-decoration none
+      img
+        width 100%
+        
+    .suggestions
+      background-color white
+      border-radius 2px
+      box-shadow 0px 2px 1px 0px rgba(0,0,0,0.25)
+      margin-bottom 15px
+      padding 20px
+
+      h3
+        font-size 13px
+        color #999999
+        text-transform uppercase
+        
+      a
+        font-size 14px
+        color #404040
+        text-decoration none
+        float right
+        
+      .suggestions-list
+        margin 10px 0
+        
+        .suggestion-item
+          display flex
+          margin 20px 0
+          .fa-stack
+            font-size 11px
+            margin-right 5px
+          p
+            font-size 14px
+            color #404040
+            font-weight 600
+          small
+            font-size 10px
+            color #b1b1b1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

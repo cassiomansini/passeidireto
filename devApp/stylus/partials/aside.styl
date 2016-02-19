@@ -1,0 +1,59 @@
+.aside
+  +below(1455px)
+    display none
+
+  position absolute
+  top 0
+  bottom 0
+  right 0
+  width 240px
+  border-left 1px solid #dfdfdf
+  display flex
+  flex-direction column
+  
+  > *
+    flex-grow 1
+    
+    ul
+      margin 10px 20px
+      li
+        font-size 13px
+        font-weight 600
+        color #404040
+        margin-bottom 5px  
+
+  
+  .header
+    background-color #ebebeb
+    padding 15px 20px
+    border-top 1px solid #dfdfdf
+    font-size 12px
+    font-weight 600
+    color #b1b1b1
+    text-transform uppercase
+    
+    i.fa
+      float right
+      
+  .search
+    position relative
+    flex-grow 0
+    display flex
+    align-items center
+    background-color #e5e5e5
+    border-top 1px solid #d1d1d1
+    border-bottom 1px solid #d1d1d1
+    
+    input
+      flex-grow 1
+      background-color transparent
+      border none
+      padding 15px 0 15px 20px
+      outline none
+      font-size 14px
+      color #999999
+      
+    i.fa
+      padding 15px
+      color #999999
+      cursor pointer
